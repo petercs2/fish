@@ -2,6 +2,8 @@
 import 'package:fishing/db_fishing/db_fishing.dart';
 import 'package:fishing/pages/fishing_add/fishing_add_binding.dart';
 import 'package:fishing/pages/fishing_add/fishing_add_view.dart';
+import 'package:fishing/pages/fishing_edit/fishing_edit_binding.dart';
+import 'package:fishing/pages/fishing_edit/fishing_edit_view.dart';
 import 'package:fishing/pages/fishing_first/fishing_first_binding.dart';
 import 'package:fishing/pages/fishing_first/fishing_first_view.dart';
 import 'package:fishing/pages/fishing_second/fishing_second_binding.dart';
@@ -12,6 +14,8 @@ import 'package:fishing/pages/no_network/no_network_binding.dart';
 import 'package:fishing/pages/no_network/no_network_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'db_fishing/fishing_bing.dart';
 
 Color primaryColor = const Color(0xff16cbde);
 Color bgColor = const Color(0xff0d1111);
@@ -30,7 +34,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Fishs,
-      initialRoute: '/fishingTab',
+      initialRoute: '/fishingEdit',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -84,9 +88,11 @@ class MyApp extends StatelessWidget {
 }
 
 List<GetPage<dynamic>> Fishs = [
+  GetPage(name: '/fishingEdit', page: () => const FishingEditView(), binding: FishingEditBinding()),
   GetPage(name: '/sad', page: () => NoNetworkPage(), binding: NoNetworkBinding()),
   GetPage(name: '/fishingTab', page: () => FishingTabPage(), binding: FishingTabBinding()),
   GetPage(name: '/fishingFirst', page: () => FishingFirstPage(), binding: FishingFirstBinding()),
+  GetPage(name: '/fishingBind', page: () => FishingBing()),
   GetPage(name: '/fishingSecond', page: () => FishingSecondPage(), binding: FishingSecondBinding()),
   GetPage(name: '/fishingAdd', page: () => const FishingAddPage(), binding: FishingAddBinding()),
 ];

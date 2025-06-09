@@ -1,0 +1,2 @@
+/Users/brian/Music/Music/Media.localized/chat/new/fishing/android/app/.cxx/RelWithDebInfo/5m4x4k2h/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/brian/Music/Music/Media.localized/chat/new/fishing/android/app/.cxx/RelWithDebInfo/5m4x4k2h/arm64-v8a/CMakeFiles/rebuild_cache.dir

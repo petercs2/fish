@@ -15,7 +15,7 @@ class FishingTabPage extends GetView<FishingTabLogic> {
       body: PageView(
         physics: const NeverScrollableScrollPhysics(),
         controller: controller.pageController,
-        children: [FishingFirstPage(), FishingAddPage(), FishingSecondPage()],
+        children: [FishingFirstPage(), const FishingAddPage(), FishingSecondPage()],
       ),
       bottomNavigationBar: Obx(() => _navFishingBars()),
     );

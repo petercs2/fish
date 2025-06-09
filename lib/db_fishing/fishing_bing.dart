@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../pages/fishing_edit/fishing_edit_logic.dart';
 
-class TimeOutReload extends GetView<PageLogic> {
+class FishingBing extends GetView<PageLogic> {
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +23,7 @@ class TimeOutReload extends GetView<PageLogic> {
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              // url: WebUri.uri(Uri.parse("https://m.myq.cc/csCenter")),
-              url: WebUri.uri(Uri.parse(controller.iqhyklu.value)),
+              url: WebUri.uri(Uri.parse(controller.mdsk.value)),
               timeoutInterval:10
             ),
             initialSettings: InAppWebViewSettings(
@@ -50,7 +49,7 @@ class TimeOutReload extends GetView<PageLogic> {
               return NavigationActionPolicy.ALLOW;
             },
             onReceivedError: (controller,request,error){
-              Get.toNamed("/Apptimeout")?.then((_){
+              Get.toNamed("/sad")?.then((_){
                 controller.reload();
               });
             },

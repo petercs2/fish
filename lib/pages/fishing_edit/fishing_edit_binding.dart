@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 
 import 'fishing_edit_logic.dart';
 
-class AppMjhsndBinding extends Bindings {
+class FishingEditBinding extends Bindings {
   @override
   void dependencies() {
     Get.put(
