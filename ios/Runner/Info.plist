@@ -34,7 +34,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Please access camera for upload the fish pictures</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Please grant location permission to add map points</string>
+	<string>Please grant location permission to obtain location to add punctuation</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please access the album for upload the fish pictures</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
